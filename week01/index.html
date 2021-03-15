@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>나의 첫번째 웹페이지</title>
+    <title>고래를 위하여</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/reset-css">
-     <link rel="stylesheet" href="./CSS/main.css" />
+    <!-- 브라우저 기본 스타일을 reset합니다 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- index.html 페이지에 적용할 스타일시트로 main.css로 연결합니다 -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+        body {
+            background-image: url(../B.jpg);
+            background-position: center;
+        }
+        p {
+            font-style: italic;
+            font-weight:bolder;
+        }
+        section {
+            color:rgb(231, 228, 18);
+        }
+    </style>
+    
 </head>
 
 <body>
-    <p onclick="popAlert()">Hello, World!</p>
-    <script src="JS/index.js"></script>
+    <section class="poem">
+        <section class="head" onclick="alertPoet()">
+            <p id="title">고래를 위하여</p>
+        </section>
+        <section class="text">
+            <section class="caluse">
+                <p>푸른 바다에 고래가 없다면</p>
+                <p>푸른 바다가 아니지</p>
+                <p>마음 속에 푸른 바다의</p>
+                <p>고래 한 마리 키우지 않으면</p>
+                <p>청년이 아니지</p><br>
+
+            </section>
+            <section class="caluse">
+                <p>푸른 바다가 고래를 위하여</p>
+                <p>푸르다는 걸 아직 모르는 사람은</p>
+                <p>아직 사랑을 모르지</p>
+            </section>
+            <section class="caluse">
+                <p>고래도 가끔 수평선 위로 치솟아올라</p>
+                <p>별을 바라본다</p>
+                <p>나도 가끔 내 마음속의 고래를 위하여</p>
+                <p>밤하늘 별들을 바라본다</p>
+            </section>
+        </section>
+    </section>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
